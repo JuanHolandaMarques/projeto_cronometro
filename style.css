@@ -1,0 +1,27 @@
+:root{
+  --base-color: #ffa600;
+  --color-textos: white; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-items: center;
+
+  background: var(--base-color);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  height:100%;
+
+  margin:;
+
+}
+
