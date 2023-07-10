@@ -9,25 +9,24 @@
 </head>
 <body>
   
-    <div class="container">
+    <div id="containerCronometro">
       <h1>
         Cronômetro
       </h1>
 
-      <p> <span id="segundos">00</span>:<span id="minutos">00</span> </p>
+      <p> <span id="minutos">00</span> : <span id="segundos">00</span> </p>
 
     </div>
 
     <div id="containerButtons">
-      <button> iniciar </button>
+      <button id="iniciar" onclick="iniciarContagem()"> iniciar </button>
 
-      <button> parar </button>
+      <button id="parar"> parar </button>
 
-      <button> reiniciar </button>
+      <button id="reiniciar"> reiniciar </button>
     </div>
  
-
-
-
+  <script src="js.js"></script>
+    
 </body>
 </html>
