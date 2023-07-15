@@ -1,6 +1,7 @@
 :root{
-  --base-color: #ffa600;
-  --color-textos: white; 
+  --background-color: #ffa600;
+  --text-color: white; 
+  --border-color: #f3f3f3;
 }
 
 *{
@@ -13,23 +14,100 @@
 body{
   display: flex;
   flex-direction: column;
+  gap: 33px;
 
+  height: 100vh;
+
+  background-image: linear-gradient(to bottom, #025953, #023E3D, #012340 );
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: var(--text-color);
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+#imgCeu{
+  display: flex;
+  align-self: flex-end;
+}
+
+#contador{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
-  background: var(--base-color);
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  height:100%;
+}
 
-  margin:30px auto;
-  
-  
+#contador #imgCaneco{
+  align-self:flex-end;
+  justify-self: center;
+}
+
+#contador #imgVela{
+  align-self:flex-start;
+  justify-self: center;
 }
 
 #containerCronometro{  
   display: flex;
-
   flex-direction: column;
   align-items: center;
+  justify-items: center;
+
+  margin: auto;
 }
 
+button{
 
+
+  background-color: var(--base-color);
+  color: var(--text-color);
+
+  height: 33.53px;
+  width: 52.33px;
+
+  border: 1px solid var(--border-color);
+  border-radius: 11px;
+
+  cursor: pointer;
+}
+
+#containerButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+
+#containerButtons #iniciar{
+  background-image: url(assets/svg/play-circle-twotone.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+#containerButtons #parar{
+  background-image: url(assets/svg/pause-outline.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-color: #027333;
+
+}
+
+#containerButtons #reiniciar{
+  display: flex;
+
+  background-image: url(assets/svg/restart-light.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#imgCasa{
+  align-items: end;
+}

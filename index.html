@@ -8,24 +8,46 @@
   <title>Projeto Cronômetro</title>
 </head>
 <body>
+  <!-- background-image céu -->
+  <div id="imgCeu">
+    <img src="assets/imagens/céu.png" alt="Balão com logo de reciclagem em meio a nuvens">
+  </div>
+
+  <div id="contador">
+
+    <div id="imgCaneco"> 
+      <img src="assets/imagens/caneco.png" alt="imagem de um copo azul">
+    </div>
+  
     <!-- números do contador -->
     <div id="containerCronometro">
       <h1>
         Cronômetro
       </h1>
+  
       
       <p> <span id="minutos">00</span><span>:</span><span id="segundos">00</span>:<span id="milesimos">00</span> </p>
-
+    </div>
+    
+    <div id="imgVela">
+      <img src="assets/imagens/vela.png" alt="imagem de uma vela aromatizada">
     </div>
 
-    <!-- botões -->
-    <div id="containerButtons">
-      <button id="iniciar" onclick="iniciarContagem()"> iniciar </button>
+  </div>
+  
+  <!-- botões -->
+  <div id="containerButtons">
+    <button id="iniciar" onclick="iniciarContagem()" alt="Iniciar cronômetro"></button>
 
-      <button id="parar" onclick="pararContagem()"> parar </button>
+    <button id="parar" onclick="pararContagem()" alt="Parar cronômetro"></button>
 
-      <button id="reiniciar" onclick="reiniciarContagem()"> reiniciar </button>
-    </div>
+    <button id="reiniciar" onclick="reiniciarContagem()" alt="Reiniciar cronômetro"></button>
+  </div>
+
+  <!-- background-image Casa -->
+  <div id="imgCasa">
+    <img src="assets/imagens/Casa.png" alt="Casa azul com uma arvore grande ao">
+  </div>
  
   <script src="js.js"></script>   
 </body>
